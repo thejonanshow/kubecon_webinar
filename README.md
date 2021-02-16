@@ -334,7 +334,7 @@ If everything went smoothly you should see this:
 
 OpenFaaS includes Prometheus so you're already collecting metrics on your new function. To get them into New Relic we're going to use the `remote_write` features of Prometheus.
 
-[Sign up for a New Relic account](https://newrelic.com/signup?utm_source=devrel&utm_medium=blog&utm_campaign=DevRel) if you don't already have one.
+[Sign up for a New Relic account](https://newrelic.com/signup?utm_source=devrel&utm_medium=kubeconwebinar&utm_campaign=DevRel) if you don't already have one.
 
 Log in to your New Relic account and then visit the [Prometheus integration page](https://one.newrelic.com/launcher/nr1-core.settings?pane=eyJuZXJkbGV0SWQiOiJwcm9tZXRoZXVzLXJlbW90ZS13cml0ZS1pbnRlZ3JhdGlvbi1uZXJkbGV0cy5zZXR1cC1wcm9tZXRoZXVzIn0=&platform[timeRange][duration]=1800000&platform[$isFallbackTimeRange]=true).
 
