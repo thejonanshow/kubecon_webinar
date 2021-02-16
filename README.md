@@ -1,3 +1,13 @@
+```
+  _    _      _ _         _  __     _                          
+ | |  | |    | | |       | |/ /    | |                         
+ | |__| | ___| | | ___   | ' /_   _| |__   ___  ___ ___  _ __  
+ |  __  |/ _ \ | |/ _ \  |  <| | | | '_ \ / _ \/ __/ _ \| '_ \ 
+ | |  | |  __/ | | (_) | | . \ |_| | |_) |  __/ (_| (_) | | | |
+ |_|  |_|\___|_|_|\___/  |_|\_\__,_|_.__/ \___|\___\___/|_| |_|
+                                                               
+```
+
 # Building a RaspberryPi Kubernetes Cluster
 - Setup pis
 - Install k3s
@@ -6,6 +16,8 @@
 - Send Prometheus data to New Relic
 
 These instructions assume you're using OSX. If you adapt them for another operating system please pull request your changes so future users will have a better time.
+
+In order to collect the data from your cluster you'll need a [New Relic account](http://bit.ly/NRKubecon). The free tier is fine, you won't need a credit card.
 
 # Preparing your Raspberry Pis
 
@@ -334,7 +346,7 @@ If everything went smoothly you should see this:
 
 OpenFaaS includes Prometheus so you're already collecting metrics on your new function. To get them into New Relic we're going to use the `remote_write` features of Prometheus.
 
-[Sign up for a New Relic account](https://newrelic.com/signup?utm_source=devrel&utm_medium=kubeconwebinar&utm_campaign=DevRel) if you don't already have one.
+[Sign up for a New Relic account](http://bit.ly/NRKubecon) if you don't already have one.
 
 Log in to your New Relic account and then visit the [Prometheus integration page](https://one.newrelic.com/launcher/nr1-core.settings?pane=eyJuZXJkbGV0SWQiOiJwcm9tZXRoZXVzLXJlbW90ZS13cml0ZS1pbnRlZ3JhdGlvbi1uZXJkbGV0cy5zZXR1cC1wcm9tZXRoZXVzIn0=&platform[timeRange][duration]=1800000&platform[$isFallbackTimeRange]=true).
 
